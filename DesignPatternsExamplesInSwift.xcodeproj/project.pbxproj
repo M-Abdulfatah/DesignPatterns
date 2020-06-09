@@ -20,6 +20,10 @@
 		1EDC5D7F248F967400BC1CF9 /* Duck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC5D75248F967400BC1CF9 /* Duck.swift */; };
 		1EDC5D80248F967400BC1CF9 /* JetFly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC5D76248F967400BC1CF9 /* JetFly.swift */; };
 		1EDC5D83248F967400BC1CF9 /* NoFly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC5D79248F967400BC1CF9 /* NoFly.swift */; };
+		1EDC5D86248F9B6500BC1CF9 /* WeatherStation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC5D85248F9B6500BC1CF9 /* WeatherStation.swift */; };
+		1EDC5D88248F9BC300BC1CF9 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC5D87248F9BC300BC1CF9 /* Observable.swift */; };
+		1EDC5D8A248F9C0600BC1CF9 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC5D89248F9C0600BC1CF9 /* Observer.swift */; };
+		1EDC5D8C248F9E8900BC1CF9 /* Display.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC5D8B248F9E8900BC1CF9 /* Display.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		1EDC5D75248F967400BC1CF9 /* Duck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Duck.swift; sourceTree = "<group>"; };
 		1EDC5D76248F967400BC1CF9 /* JetFly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JetFly.swift; sourceTree = "<group>"; };
 		1EDC5D79248F967400BC1CF9 /* NoFly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoFly.swift; sourceTree = "<group>"; };
+		1EDC5D85248F9B6500BC1CF9 /* WeatherStation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherStation.swift; sourceTree = "<group>"; };
+		1EDC5D87248F9BC300BC1CF9 /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		1EDC5D89248F9C0600BC1CF9 /* Observer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		1EDC5D8B248F9E8900BC1CF9 /* Display.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Display.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +78,7 @@
 		1EDC5D5A248F961200BC1CF9 /* DesignPatternsExamplesInSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1EDC5D84248F9B4700BC1CF9 /* ObserverPattern */,
 				1EDC5D6F248F962400BC1CF9 /* StrategyPattern */,
 				1EDC5D5B248F961200BC1CF9 /* AppDelegate.swift */,
 				1EDC5D5D248F961200BC1CF9 /* SceneDelegate.swift */,
@@ -94,6 +103,17 @@
 				1EDC5D75248F967400BC1CF9 /* Duck.swift */,
 			);
 			path = StrategyPattern;
+			sourceTree = "<group>";
+		};
+		1EDC5D84248F9B4700BC1CF9 /* ObserverPattern */ = {
+			isa = PBXGroup;
+			children = (
+				1EDC5D87248F9BC300BC1CF9 /* Observable.swift */,
+				1EDC5D89248F9C0600BC1CF9 /* Observer.swift */,
+				1EDC5D85248F9B6500BC1CF9 /* WeatherStation.swift */,
+				1EDC5D8B248F9E8900BC1CF9 /* Display.swift */,
+			);
+			path = ObserverPattern;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,15 +187,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EDC5D8A248F9C0600BC1CF9 /* Observer.swift in Sources */,
 				1EDC5D7B248F967400BC1CF9 /* LowQuacking.swift in Sources */,
+				1EDC5D8C248F9E8900BC1CF9 /* Display.swift in Sources */,
 				1EDC5D7D248F967400BC1CF9 /* HighQucking.swift in Sources */,
 				1EDC5D7F248F967400BC1CF9 /* Duck.swift in Sources */,
 				1EDC5D83248F967400BC1CF9 /* NoFly.swift in Sources */,
+				1EDC5D88248F9BC300BC1CF9 /* Observable.swift in Sources */,
 				1EDC5D60248F961200BC1CF9 /* ViewController.swift in Sources */,
 				1EDC5D5C248F961200BC1CF9 /* AppDelegate.swift in Sources */,
 				1EDC5D5E248F961200BC1CF9 /* SceneDelegate.swift in Sources */,
 				1EDC5D7A248F967400BC1CF9 /* Quackable.swift in Sources */,
 				1EDC5D7E248F967400BC1CF9 /* Flyable.swift in Sources */,
+				1EDC5D86248F9B6500BC1CF9 /* WeatherStation.swift in Sources */,
 				1EDC5D80248F967400BC1CF9 /* JetFly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
