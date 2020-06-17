@@ -13,7 +13,8 @@ class ViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
 //    performStrategyPattern()
-    performObserverPattern()
+//    performObserverPattern()
+    performDecoratorPattern()
   }
   
   // MARK: - Strategy Pattern
@@ -30,6 +31,14 @@ class ViewController: UIViewController {
     let mobileDisplay = Display(station, 1)
     station.add(mobileDisplay)
     station.notify()
+  }
+  
+  // MARK: - Decorator Pattern
+  func performDecoratorPattern() {
+    let esepresso = Esepresso()
+    let esepressoWithCaramel = Caramel(beverage: esepresso)
+    print("Esepresso costs \(esepresso.cost())$")
+    print("Esepresso with caramel costs \(esepressoWithCaramel.cost())$")
   }
 }
 
